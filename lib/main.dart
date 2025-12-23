@@ -1,0 +1,25 @@
+import 'package:dash_app/pages/login.dart';
+// import 'package:dash_app/pages/test1.dart';
+import 'package:flutter/material.dart';
+// import 'pages/login.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Dash App',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const LoginPage(),
+    );
+  }
+}
